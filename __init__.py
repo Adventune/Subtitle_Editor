@@ -202,8 +202,7 @@ def install_dependencies(blender_python_exe):
 
     # Construct the pip install command
     cmd = [
-        blender_python_exe, "-m", "pip", "install", "--upgrade",
-        "--user", "--no-cache-dir", "onnxruntime"
+        blender_python_exe, "-m", "pip", "install", "--upgrade", "--no-cache-dir", "onnxruntime"
     ]
     print(f"Running installation command: {' '.join(cmd)}")
 
@@ -226,8 +225,7 @@ def install_dependencies(blender_python_exe):
     
     # Construct the pip install command
     cmd = [
-        blender_python_exe, "-m", "pip", "install", "--upgrade",
-        "--user", "--no-cache-dir", REQUIRED_PACKAGE
+        blender_python_exe, "-m", "pip", "install", "--upgrade", "--no-cache-dir", REQUIRED_PACKAGE
     ]
     print(f"Running installation command: {' '.join(cmd)}")
 
